@@ -59,7 +59,7 @@ if __name__ == '__main__':
     #
     # test_df['total_cases'] = rf.predict(test_df.values)
     # test_df['total_cases'] = test_df['total_cases'].astype(int)
-
+    
     test_df['total_cases'] = test_preds
     test_df['total_cases'] = test_df['total_cases'].astype(int)
     test_df = test_df[['sj','year','weekofyear','total_cases']]
